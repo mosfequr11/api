@@ -9,7 +9,7 @@ function getLocalStorage(key) {
   alert(localStorage.getItem(key));
 }
 
-//
+
 // removeLocalStorage(key){
 //   localStorage.removeItem(key);
 // }
