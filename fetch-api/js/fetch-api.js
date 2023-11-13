@@ -1,9 +1,9 @@
-
 var displayData = document.getElementById("display");
 
-getData(){
-fetch("file:///D:/hw/api/fetch-api/demo-data.txt").then(res => res.text());
-.then(data => {
-  displayData.innerText = data;
-})
+function getData() {
+  fetch("http://127.0.0.1:5500/fetch-api/demo-data.txt")
+    .then((res) => res.text())
+    .then((data) => {
+      displayData.innerText = data;
+    });
 }
